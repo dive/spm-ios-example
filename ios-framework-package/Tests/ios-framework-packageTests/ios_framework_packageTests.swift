@@ -3,10 +3,9 @@ import XCTest
 
 final class ios_framework_packageTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ios_framework_package().text, "Hello, World!")
+        let package = FrameworkPackage()
+        let colors = [ package.randomColor(), package.randomColor() ]
+        XCTAssertNotEqual(colors.first, colors.last)
     }
 
     static var allTests = [
