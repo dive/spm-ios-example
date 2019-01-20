@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import class ios_framework_package.FrameworkPackage
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = FrameworkPackage().randomColor()
+    }
+    
+    @IBAction func pressed(_ button: UIButton) {
+        self.view.backgroundColor = FrameworkPackage().randomColor()
     }
 
 }

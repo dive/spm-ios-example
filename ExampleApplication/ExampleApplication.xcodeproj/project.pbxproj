@@ -12,7 +12,25 @@
 		5455207B21F4978900D12D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455207921F4978900D12D95 /* Main.storyboard */; };
 		5455207D21F4978A00D12D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455207C21F4978A00D12D95 /* Assets.xcassets */; };
 		5455208021F4978A00D12D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455207E21F4978A00D12D95 /* LaunchScreen.storyboard */; };
+		549F08BB21F4983500EE4073 /* ios_framework_package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5455208F21F4981E00D12D95 /* ios_framework_package.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5455208E21F4981E00D12D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5455208721F4981E00D12D95 /* ios-framework-package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "ios-framework-package::ios-framework-package::Product";
+			remoteInfo = "ios-framework-package";
+		};
+		5455209021F4981E00D12D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5455208721F4981E00D12D95 /* ios-framework-package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "ios-framework-package::ios-framework-packageTests::Product";
+			remoteInfo = "ios-framework-packageTests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5455207221F4978900D12D95 /* ExampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,7 @@
 		5455207C21F4978A00D12D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5455207F21F4978A00D12D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5455208121F4978A00D12D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5455208721F4981E00D12D95 /* ios-framework-package.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ios-framework-package.xcodeproj"; path = "../ios-framework-package/ios-framework-package.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549F08BB21F4983500EE4073 /* ios_framework_package.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +58,10 @@
 		5455206921F4978900D12D95 = {
 			isa = PBXGroup;
 			children = (
+				5455208721F4981E00D12D95 /* ios-framework-package.xcodeproj */,
 				5455207421F4978900D12D95 /* ExampleApplication */,
 				5455207321F4978900D12D95 /* Products */,
+				549F08B621F4983500EE4073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +84,22 @@
 				5455208121F4978A00D12D95 /* Info.plist */,
 			);
 			path = ExampleApplication;
+			sourceTree = "<group>";
+		};
+		5455208821F4981E00D12D95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5455208F21F4981E00D12D95 /* ios_framework_package.framework */,
+				5455209121F4981E00D12D95 /* ios_framework_packageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		549F08B621F4983500EE4073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +148,36 @@
 			mainGroup = 5455206921F4978900D12D95;
 			productRefGroup = 5455207321F4978900D12D95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5455208821F4981E00D12D95 /* Products */;
+					ProjectRef = 5455208721F4981E00D12D95 /* ios-framework-package.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5455207121F4978900D12D95 /* ExampleApplication */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5455208F21F4981E00D12D95 /* ios_framework_package.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ios_framework_package.framework;
+			remoteRef = 5455208E21F4981E00D12D95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5455209121F4981E00D12D95 /* ios_framework_packageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			name = ios_framework_packageTests.xctest;
+			path = "ios-framework-packageTests.xctest";
+			remoteRef = 5455209021F4981E00D12D95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5455207021F4978900D12D95 /* Resources */ = {

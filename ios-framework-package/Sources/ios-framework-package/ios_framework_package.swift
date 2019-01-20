@@ -1,6 +1,7 @@
 import UIKit
 
-final class FrameworkPackage {
+public final class FrameworkPackage {
+    public init () { }
     public func randomColor() -> UIColor {
         return UIColor.random
     }
